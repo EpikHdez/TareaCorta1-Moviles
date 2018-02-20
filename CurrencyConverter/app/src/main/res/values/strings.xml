@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Currency Converter</string>
+    <string name="app_name">Exchange calculator</string>
+    <string name="DtoC">Dollars - Colons</string>
+    <string name="CtoD">Colons - Dollars</string>
+    <string name="amountHint">Enter value to exchange</string>
+    <string name="convert">Convert</string>
+    <string name="exchangeChangeError">There was an error when trying to change the exchange currency, try again later.</string>
+    <string name="noHandler">There no a programing for this action.</string>
 </resources>

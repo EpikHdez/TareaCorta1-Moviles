@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcular tipo de cambio</string>
+    <string name="DtoC">Dolares - Colones</string>
+    <string name="CtoD">Colones - Dolares</string>
+    <string name="amountHint">Ingrese el valor a convertir</string>
+    <string name="convert">Convertir</string>
+    <string name="exchangeChangeError">Ha ocurrido un error al intentar cambiar el tipo de cambio, intentelo de nuevo más tarde.</string>
+    <string name="noHandler">No éxiste una programación para esta acción.</string>
+</resources>

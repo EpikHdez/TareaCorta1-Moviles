@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context="erickhdez.com.currencyconverter.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtAmountInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp">
+
+            <RadioButton
+                android:id="@+id/radioDtoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:padding="5dp"
+                android:text="@string/DtoC"
+                android:textSize="20sp"
+                android:onClick="radioRadiobuttonClicked" />
+
+            <RadioButton
+                android:id="@+id/radioCtoD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/CtoD"
+                android:textSize="20sp"
+                android:onClick="radioRadiobuttonClicked" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtAmountInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="@string/amountHint"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAmountInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="btnConvertClicked"
+            android:text="@string/convert"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblAmountConverted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnConvert"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:text="" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
