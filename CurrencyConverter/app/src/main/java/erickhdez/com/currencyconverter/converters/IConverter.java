@@ -5,7 +5,7 @@ package erickhdez.com.currencyconverter.converters;
  */
 
 public interface IConverter {
-    double EXCHANGE_RATE = 580;
+    double EXCHANGE_RATE = 566.69;
 
     double convert(double amount);
 }
